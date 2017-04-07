@@ -1,0 +1,28 @@
+<svg height="398" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="398" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">  0.  2017-04-07 04:26:20 +0000    70562 byte  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-07 04:26:20 +0000     1080 byte  LICENSE</tspan>
+<tspan x="10" y="58">  2.  2017-04-07 04:26:20 +0000     5302 byte  README.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-07 04:26:20 +0000      497 byte  bower.json</tspan>
+<tspan x="10" y="90">  4.  2017-04-07 04:26:20 +0000      117 byte  build/copyright</tspan>
+<tspan x="10" y="106">  5.  2017-04-07 04:26:20 +0000     5933 byte  build/jsonMask.js</tspan>
+<tspan x="10" y="122">  6.  2017-04-07 04:26:20 +0000     4591 byte  build/jsonMask.min.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-07 04:26:20 +0000     1115 byte  example/server.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-07 04:26:20 +0000      558 byte  example/simple_server.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-07 04:26:20 +0000     1961 byte  lib/compiler.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-07 04:26:20 +0000     1973 byte  lib/filter.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-07 04:26:20 +0000      212 byte  lib/index.js</tspan>
+<tspan x="10" y="218"> 12.  2017-04-07 04:26:20 +0000      619 byte  lib/util.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-07 04:26:20 +0000    34840 byte  logo.png</tspan>
+<tspan x="10" y="250"> 14.  2017-04-07 04:26:20 +0000     3392 byte  package.json</tspan>
+<tspan x="10" y="266"> 15.  2017-04-07 04:26:20 +0000      230 byte  test/browser/index.html</tspan>
+<tspan x="10" y="282"> 16.  2017-04-07 04:26:20 +0000      201 byte  test/browser/jsonMask.html</tspan>
+<tspan x="10" y="298"> 17.  2017-04-07 04:26:20 +0000      205 byte  test/browser/jsonMaskMin.html</tspan>
+<tspan x="10" y="314"> 18.  2017-04-07 04:26:20 +0000      251 byte  test/browser/test.js</tspan>
+<tspan x="10" y="330"> 19.  2017-04-07 04:26:20 +0000      972 byte  test/compiler-test.js</tspan>
+<tspan x="10" y="346"> 20.  2017-04-07 04:26:20 +0000     1006 byte  test/filter-test.js</tspan>
+<tspan x="10" y="362"> 21.  2017-04-07 04:26:20 +0000     2378 byte  test/fixture/activities.json</tspan>
+<tspan x="10" y="378"> 22.  2017-04-07 04:26:20 +0000     3129 byte  test/index-test.js</tspan>
+</text>
+</svg>

@@ -1,0 +1,298 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/nemtsov/json-mask#readme">json-mask (v0.3.8)</a>
+</h1>
+<h4>Tiny language and engine for selecting specific parts of a JS object, hiding the rest.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.json-mask">module json-mask</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-mask.compile">
+            function <span class="apidocSignatureSpan">json-mask.</span>compile
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-mask.filter">
+            function <span class="apidocSignatureSpan">json-mask.</span>filter
+            <span class="apidocSignatureSpan">(obj, compiledMask)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">json-mask.</span>util</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.json-mask.util">module json-mask.util</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-mask.util.has">
+            function <span class="apidocSignatureSpan">json-mask.util.</span>has
+            <span class="apidocSignatureSpan">(obj, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-mask.util.isArray">
+            function <span class="apidocSignatureSpan">json-mask.util.</span>isArray
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-mask.util.isEmpty">
+            function <span class="apidocSignatureSpan">json-mask.util.</span>isEmpty
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-mask.util.isObject">
+            function <span class="apidocSignatureSpan">json-mask.util.</span>isObject
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.json-mask" id="apidoc.module.json-mask">module json-mask</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.json-mask.compile" id="apidoc.element.json-mask.compile">
+        function <span class="apidocSignatureSpan">json-mask.</span>compile
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function compile(text) {
+  if (!text) return null
+  return parse(scan(text))
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.json-mask.filter" id="apidoc.element.json-mask.filter">
+        function <span class="apidocSignatureSpan">json-mask.</span>filter
+        <span class="apidocSignatureSpan">(obj, compiledMask)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function filter(obj, compiledMask) {
+  return util.isArray(obj)
+    ? _arrayProperties(obj, compiledMask)
+    : _properties(obj, compiledMask)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.json-mask.util" id="apidoc.module.json-mask.util">module json-mask.util</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.json-mask.util.has" id="apidoc.element.json-mask.util.has">
+        function <span class="apidocSignatureSpan">json-mask.util.</span>has
+        <span class="apidocSignatureSpan">(obj, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function has(obj, key) {
+  return ObjProto.hasOwnProperty.call(obj, key)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var maskedObj, key, value, ret, retKey, typeFunc
+if (!obj || !mask) return obj
+
+if (util.isArray(obj)) maskedObj = []
+else if (util.isObject(obj)) maskedObj = {}
+
+for (key in mask) {
+  if (!util.<span class="apidocCodeKeywordSpan">has</span>(mask, key)) continue
+  value = mask[key]
+  ret = undefined
+  typeFunc = (value.type === 'object') ? _object : _array
+  if (key === '*') {
+    ret = _forAll(obj, value.properties, typeFunc)
+    for (retKey in ret) {
+      if (!util.has(ret, retKey)) continue
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.json-mask.util.isArray" id="apidoc.element.json-mask.util.isArray">
+        function <span class="apidocSignatureSpan">json-mask.util.</span>isArray
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isArray() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+
+var util = require('./util')
+
+module.exports = filter
+
+function filter (obj, compiledMask) {
+  return util.<span class="apidocCodeKeywordSpan">isArray</span>(obj)
+    ? _arrayProperties(obj, compiledMask)
+    : _properties(obj, compiledMask)
+}
+
+// wrap array &amp; mask in a temp object;
+// extract results from temp at the end
+function _arrayProperties (arr, mask) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.json-mask.util.isEmpty" id="apidoc.element.json-mask.util.isEmpty">
+        function <span class="apidocSignatureSpan">json-mask.util.</span>isEmpty
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isEmpty(obj) {
+  if (obj == null) return true
+  if (isArray(obj) ||
+     (typeof obj === 'string')) return (obj.length === 0)
+  for (var key in obj) if (has(obj, key)) return false
+  return true
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+
+  return props
+}
+
+function _addToken (token, props) {
+  props[token.value] = {type: token.type}
+  if (!util.<span class="apidocCodeKeywordSpan">isEmpty</span>(token.properties)) {
+    props[token.value].properties = token.properties
+  }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.json-mask.util.isObject" id="apidoc.element.json-mask.util.isObject">
+        function <span class="apidocSignatureSpan">json-mask.util.</span>isObject
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isObject(obj) {
+  return typeof obj === 'function' || typeof obj === 'object' &amp;&amp; !!obj
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+function _properties (obj, mask) {
+var maskedObj, key, value, ret, retKey, typeFunc
+if (!obj || !mask) return obj
+
+if (util.isArray(obj)) maskedObj = []
+else if (util.<span class="apidocCodeKeywordSpan">isObject</span>(obj)) maskedObj = {}
+
+for (key in mask) {
+  if (!util.has(mask, key)) continue
+  value = mask[key]
+  ret = undefined
+  typeFunc = (value.type === 'object') ? _object : _array
+  if (key === '*') {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
